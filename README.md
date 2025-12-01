@@ -453,23 +453,14 @@ Ce projet est sous licence **MIT**. Voir le fichier [LICENSE](LICENSE) pour plus
 
 ## 👨‍💻 Auteurs
 
-**Votre Nom**
+**Imen BEN OTHMEN BANANI**
 
-- 🌐 Website: [votre-site.com](https://votre-site.com)
-- 🐙 GitHub: [@votre-username](https://github.com/votre-username)
-- 💼 LinkedIn: [Votre Nom](https://linkedin.com/in/votre-profil)
-- 📧 Email: votre.email@example.com
+- 🐙 GitHub: (https://github.com/Imenbenothmenbanani)
+- 💼 LinkedIn: [www.linkedin.com/in/imenbenothmenbanani
+- 📧 Email: imenbenothmenbanani@gmail.com
 
 ---
 
-## 📞 Contact & Support
-
-Pour toute question ou suggestion :
-
-- 📧 **Email** : support@eduplatform.com
-- 💬 **Discord** : [Rejoindre notre serveur](https://discord.gg/eduplatform)
-- 🐛 **Issues** : [Signaler un bug](https://github.com/votre-username/eduplatform/issues)
-- 💡 **Discussions** : [Forum de discussion](https://github.com/votre-username/eduplatform/discussions)
 
 ---
 
@@ -485,9 +476,6 @@ Pour toute question ou suggestion :
 
 <div align="center">
 
-**⭐ Si ce projet vous a aidé, n'hésitez pas à lui donner une étoile !**
-
-Made with ❤️ by [Votre Nom](https://github.com/votre-username)
 
 [![GitHub stars](https://img.shields.io/github/stars/votre-username/eduplatform?style=social)](https://github.com/votre-username/eduplatform)
 [![GitHub forks](https://img.shields.io/github/forks/votre-username/eduplatform?style=social)](https://github.com/votre-username/eduplatform/fork)
