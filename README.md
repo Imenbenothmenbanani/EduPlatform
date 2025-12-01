@@ -43,10 +43,6 @@
 
 ---
 
-## 🎯 À Propos
-
-**EduPlatform** est une plateforme moderne de gestion de cours en ligne construite avec le stack **MERN** (MongoDB, Express, React, Node.js). Elle permet aux utilisateurs de découvrir des cours, de s'inscrire, de laisser des avis et de gérer leur profil personnel.
-
 ### ✨ Points Forts
 
 - 🔐 **Authentification sécurisée** avec JWT
