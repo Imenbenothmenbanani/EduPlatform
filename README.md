@@ -306,8 +306,8 @@ JWT_EXPIRE=30d
 eduplatform/
 │
 ├── 📁 backend/
-│   ├── 📁 config/
-│   │   └── db.js                 # Configuration MongoDB
+│   ├── 📁 middelware/
+│   │   └── AuthMiddelware.js             
 │   │
 │   ├── 📁 controllers/
 │   │   ├── authController.js     # Logique authentification
@@ -333,7 +333,6 @@ eduplatform/
 │   │   └── asyncHandler.js       # Gestion async/await
 │   │
 │   ├── .env                       # Variables d'environnement
-│   ├── .env.example               # Exemple de configuration
 │   ├── server.js                  # Point d'entrée backend
 │   └── package.json
 │
@@ -342,6 +341,7 @@ eduplatform/
     │   └── vite.svg
     │
     ├── 📁 src/
+│   ├── 📁 context/
     │   ├── 📁 pages/
     │   │   ├── Home.jsx           # Page d'accueil
     │   │   ├── Login.jsx          # Page connexion
@@ -349,16 +349,14 @@ eduplatform/
     │   │   ├── Courses.jsx        # Liste des cours
     │   │   ├── CourseDetails.jsx  # Détails d'un cours
     │   │   ├── Profile.jsx        # Page profil
-    │   │   ├── MyReviews.jsx      # Mes avis
-    │   │   └── NotFound.jsx       # Page 404
+    │   │   ├──  useAuth.js
     │   │
     │   ├── 📁 components/
     │   │   ├── Navbar.jsx         # Barre de navigation
     │   │   └── ProtectedRoute.jsx # Route protégée
     │   │
-    │   ├── 📁 context/
+    │   ├──  AuthContext.js
     │   │   └── AuthContext.jsx    # Contexte authentification
-    │   │
     │   ├── 📁 api/
     │   │   └── axios.js           # Configuration Axios
     │   │
