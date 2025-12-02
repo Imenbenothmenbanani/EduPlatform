@@ -1,3 +1,7 @@
+## 🎯 À Propos
+
+**EduPlatform** est une plateforme moderne de gestion de cours en ligne construite avec le stack **MERN** (MongoDB, Express, React, Node.js). Elle permet aux utilisateurs de découvrir des cours, de s'inscrire, de laisser des avis et de gérer leur profil personnel.
+
 # 🎓 EduPlatform
 
 <div align="center">
@@ -37,10 +41,6 @@
 - [Contact](#-contact)
 
 ---
-
-## 🎯 À Propos
-
-**EduPlatform** est une plateforme moderne de gestion de cours en ligne construite avec le stack **MERN** (MongoDB, Express, React, Node.js). Elle permet aux utilisateurs de découvrir des cours, de s'inscrire, de laisser des avis et de gérer leur profil personnel.
 
 ### ✨ Points Forts
 
@@ -140,7 +140,7 @@ Avant de commencer, assurez-vous d'avoir installé :
 
 - ![Node.js](https://img.shields.io/badge/Node.js-v18+-339933?style=flat&logo=node.js) **Node.js** >= 18.0.0
 - ![MongoDB](https://img.shields.io/badge/MongoDB-v6+-47A248?style=flat&logo=mongodb) **MongoDB** installé localement ou compte [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
-- ![npm](https://img.shields.io/badge/npm-v9+-CB3837?style=flat&logo=npm) **npm** ou **yarn**
+- ![npm](https://img.shields.io/badge/npm-v9+-CB3837?style=flat&logo=npm) **npm** 
 
 ### 🔧 Installation Rapide
 
@@ -284,7 +284,10 @@ JWT_EXPIRE=30d
     "email": "imen@gmail.com"
   }
 }
+
 ```
+<img width="1307" height="762" alt="image" src="https://github.com/user-attachments/assets/0ae80adf-d4c5-4647-8d2e-89c5e163c7a9" />
+
 
 > 💡 **Note** : Le token JWT doit être inclus dans les headers des requêtes protégées :  
 > `Authorization: Bearer {token}`
