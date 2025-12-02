@@ -287,6 +287,57 @@ JWT_EXPIRE=30d
 
 ```
 <img width="1307" height="762" alt="image" src="https://github.com/user-attachments/assets/0ae80adf-d4c5-4647-8d2e-89c5e163c7a9" />
+#### Exemple de Requête Login
+**POST** `http://localhost:5000/api/auth/register`
+
+```json
+{
+  "email": "imen@gmail.com",
+  "password": "123456"
+}
+```
+
+
+
+***Réponse (200 Created)*** :
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTJlYzc1MTJjODkwNWNmYzhjNmJmMGIiLCJlbWFpbCI6ImltZW5AZ21haWwuY29tIiwiaWF0IjoxNzY0NjczOTM2LCJleHAiOjE3NjUyNzg3MzZ9.YEx3GDEDKF44ymkZ2x3EUbzjGt5GRMzVRKAC7bWjdio",
+    "user": {
+        "id": "692ec7512c8905cfc8c6bf0b",
+        "username": "imen",
+        "email": "imen@gmail.com"
+    }
+
+<img width="822" height="787" alt="image" src="https://github.com/user-attachments/assets/211c6b24-edc6-4736-9bb2-6b6d52bf2cee" />
+
+
+#### Exemple de Requête Login
+**POST** `http://localhost:5000/api/auth/me`
+
+```json
+{
+  "email": "imen@gmail.com",
+  "password": "123456"
+}
+
+```
+
+
+
+***Réponse (200 Created)*** :
+{
+{
+    "_id": "692ec7512c8905cfc8c6bf0b",
+    "username": "imen",
+    "email": "imen@gmail.com",
+    "courses": [],
+    "createdAt": "2025-12-02T11:02:41.741Z",
+    "updatedAt": "2025-12-02T11:02:41.741Z",
+    "__v": 0
+}
+
+
+<img width="825" height="1032" alt="image" src="https://github.com/user-attachments/assets/e58df2a1-aa8a-4be9-a184-d33a00678412" />
 
 
 > 💡 **Note** : Le token JWT doit être inclus dans les headers des requêtes protégées :  
