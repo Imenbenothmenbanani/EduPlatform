@@ -17,12 +17,7 @@
 
 </div>
 
-
 ---
-
-## 🎯 À Propos
-
-**EduPlatform** est une plateforme moderne de gestion de cours en ligne construite avec le stack **MERN** (MongoDB, Express, React, Node.js). Elle permet aux utilisateurs de découvrir des cours, de s'inscrire, de laisser des avis et de gérer leur profil personnel.
 
 ## 📋 Table des Matières
 
@@ -42,6 +37,10 @@
 - [Contact](#-contact)
 
 ---
+
+## 🎯 À Propos
+
+**EduPlatform** est une plateforme moderne de gestion de cours en ligne construite avec le stack **MERN** (MongoDB, Express, React, Node.js). Elle permet aux utilisateurs de découvrir des cours, de s'inscrire, de laisser des avis et de gérer leur profil personnel.
 
 ### ✨ Points Forts
 
@@ -262,6 +261,34 @@ JWT_EXPIRE=30d
 | `POST` | `/api/auth/login` | Se connecter | ❌ |
 | `GET` | `/api/auth/me` | Obtenir l'utilisateur connecté | ✅ |
 
+#### Exemple de Requête d'Inscription
+
+**POST** `http://localhost:5000/api/auth/register`
+
+```json
+{
+  "username": "imen",
+  "email": "imen@gmail.com",
+  "password": "123456"
+}
+```
+
+**Réponse (201 Created)** :
+
+```json
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MmVjNzUxMmM4OTA1Y2ZjOGM2YmYwYiIsImlhdCI6MTczMTIxNTQ5NiwiZXhwIjoxNzMzODA3NDk2fQ.xNjF9.xQFrIAOQMWbmo_W-w7WI5YUNpaajUMxQ87d5_xtYjQg",
+  "user": {
+    "id": "692ec7512c8905cfc8c6bf0b",
+    "username": "imen",
+    "email": "imen@gmail.com"
+  }
+}
+```
+
+> 💡 **Note** : Le token JWT doit être inclus dans les headers des requêtes protégées :  
+> `Authorization: Bearer {token}`
+
 ### 👤 Utilisateurs
 
 | Méthode | Endpoint | Description | Auth |
@@ -307,8 +334,8 @@ JWT_EXPIRE=30d
 eduplatform/
 │
 ├── 📁 backend/
-│   ├── 📁 middelware/
-│   │   └── AuthMiddelware.js             
+│   ├── 📁 config/
+│   │   └── db.js                 # Configuration MongoDB
 │   │
 │   ├── 📁 controllers/
 │   │   ├── authController.js     # Logique authentification
@@ -334,6 +361,7 @@ eduplatform/
 │   │   └── asyncHandler.js       # Gestion async/await
 │   │
 │   ├── .env                       # Variables d'environnement
+│   ├── .env.example               # Exemple de configuration
 │   ├── server.js                  # Point d'entrée backend
 │   └── package.json
 │
@@ -342,7 +370,6 @@ eduplatform/
     │   └── vite.svg
     │
     ├── 📁 src/
-│   ├── 📁 context/
     │   ├── 📁 pages/
     │   │   ├── Home.jsx           # Page d'accueil
     │   │   ├── Login.jsx          # Page connexion
@@ -350,14 +377,16 @@ eduplatform/
     │   │   ├── Courses.jsx        # Liste des cours
     │   │   ├── CourseDetails.jsx  # Détails d'un cours
     │   │   ├── Profile.jsx        # Page profil
-    │   │   ├──  useAuth.js
+    │   │   ├── MyReviews.jsx      # Mes avis
+    │   │   └── NotFound.jsx       # Page 404
     │   │
     │   ├── 📁 components/
     │   │   ├── Navbar.jsx         # Barre de navigation
     │   │   └── ProtectedRoute.jsx # Route protégée
     │   │
-    │   ├──  AuthContext.js
+    │   ├── 📁 context/
     │   │   └── AuthContext.jsx    # Contexte authentification
+    │   │
     │   ├── 📁 api/
     │   │   └── axios.js           # Configuration Axios
     │   │
@@ -407,6 +436,10 @@ npm install
 
 ## 📸 Captures d'Écran
 
+### 🔐 Test API - Inscription (Postman)
+![API Register Test](./screenshots/api-register-token.png)
+*Exemple de réponse d'inscription avec génération du token JWT*
+
 ### 🏠 Page d'Accueil
 ![Home Page](./screenshots/home.png)
 
@@ -454,14 +487,23 @@ Ce projet est sous licence **MIT**. Voir le fichier [LICENSE](LICENSE) pour plus
 
 ## 👨‍💻 Auteurs
 
-**Imen BEN OTHMEN BANANI**
+**Votre Nom**
 
-- 🐙 GitHub: (https://github.com/Imenbenothmenbanani)
-- 💼 LinkedIn: [www.linkedin.com/in/imenbenothmenbanani
-- 📧 Email: imenbenothmenbanani@gmail.com
+- 🌐 Website: [votre-site.com](https://votre-site.com)
+- 🐙 GitHub: [@votre-username](https://github.com/votre-username)
+- 💼 LinkedIn: [Votre Nom](https://linkedin.com/in/votre-profil)
+- 📧 Email: votre.email@example.com
 
 ---
 
+## 📞 Contact & Support
+
+Pour toute question ou suggestion :
+
+- 📧 **Email** : support@eduplatform.com
+- 💬 **Discord** : [Rejoindre notre serveur](https://discord.gg/eduplatform)
+- 🐛 **Issues** : [Signaler un bug](https://github.com/votre-username/eduplatform/issues)
+- 💡 **Discussions** : [Forum de discussion](https://github.com/votre-username/eduplatform/discussions)
 
 ---
 
@@ -477,6 +519,9 @@ Ce projet est sous licence **MIT**. Voir le fichier [LICENSE](LICENSE) pour plus
 
 <div align="center">
 
+**⭐ Si ce projet vous a aidé, n'hésitez pas à lui donner une étoile !**
+
+Made with ❤️ by [Votre Nom](https://github.com/votre-username)
 
 [![GitHub stars](https://img.shields.io/github/stars/votre-username/eduplatform?style=social)](https://github.com/votre-username/eduplatform)
 [![GitHub forks](https://img.shields.io/github/forks/votre-username/eduplatform?style=social)](https://github.com/votre-username/eduplatform/fork)
