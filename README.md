@@ -336,12 +336,8 @@ JWT_EXPIRE=30d
     "__v": 0
 }
 
-
 <img width="825" height="1032" alt="image" src="https://github.com/user-attachments/assets/e58df2a1-aa8a-4be9-a184-d33a00678412" />
 
-
-> 💡 **Note** : Le token JWT doit être inclus dans les headers des requêtes protégées :  
-> `Authorization: Bearer {token}`
 
 ### 👤 Utilisateurs
 
