@@ -554,8 +554,4 @@ Imen BEN OTHMEN BANANI
 
 <div align="center">
 
-**⭐ Si ce projet vous a aidé, n'hésitez pas à lui donner une étoile !**
-
-Made with ❤️ by Imen BEN OTHMEN Banani
-
 </div>
